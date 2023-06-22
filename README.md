@@ -21,17 +21,19 @@ pip install pdf2image pytesseract pillow
 
 1. Clone the repository:
 
+```bash
 git clone https://github.com/shresthagarwal77/pdf-ocr-converter.git
-
+```
 
 2. Navigate to the project directory:
 
+```bash
 cd pdf-ocr-converter
-
+```
 3. Run the script:
-
+```bash
 python ocr_converter.py
-
+```
 
 4. A file dialog will open. Select the PDF file you want to convert.
 
