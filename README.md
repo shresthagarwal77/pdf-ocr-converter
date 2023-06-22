@@ -45,6 +45,25 @@ python ocr_converter.py
 
 - OCR Settings: You can adjust the OCR settings by modifying the `perform_ocr_on_image` function. For example, you can change the language, OCR configuration, or experiment with different OCR engines.
 
+## API Endpoint (Optional)
+
+You can also use this PDF to Text Converter as an API endpoint. This allows you to convert PDF files to text programmatically by sending HTTP requests. Here's how to use the API endpoint:
+
+1. Start the Flask server:
+```bash
+python ocr_converter.py
+```
+
+2. Send a POST request to the following endpoint using a tool like Postman:
+
+```bash
+POST http://localhost:5000/process_pdf
+```
+
+3. Attach the PDF file to the request body.
+
+4. The server will process the PDF file, convert it to text using OCR, and return the extracted text as the response.
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
@@ -60,6 +79,7 @@ This project makes use of the following libraries:
 - [pdf2image](https://github.com/Belval/pdf2image) - Convert PDF to image
 - [pytesseract](https://github.com/madmaze/pytesseract) - OCR engine for Python
 - [Pillow](https://python-pillow.org/) - Image processing library
+- [Tkinter](https://docs.python.org/3/library/tkinter.html) - Python's standard GUI package
 
 ## Resources
 
@@ -67,5 +87,4 @@ This project makes use of the following libraries:
 - [pdf2image Documentation](https://github.com/Belval/pdf2image#readme)
 - [pytesseract Documentation](https://pypi.org/project/pytesseract/)
 - [Pillow Documentation](https://pillow.readthedocs.io/)
-
-
+- [Postman](https://www.postman.com/) - API development and testing tool
